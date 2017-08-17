@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.design.widget.FloatingActionButton
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="20dp"
+		android:id="@+id/floatingActionButton2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:clickable="true"
+		app:fabSize="mini"
+		android:background="@color/Light_colorAccent"/>
+
+	<com.xh.sample.view.XhToolbar
+		android:fitsSystemWindows="true"
+		android:id="@+id/xh_activity_main_toolbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:minHeight="?attr/actionBarSize"
+		android:background="?attr/colorPrimary">
+	</com.xh.sample.view.XhToolbar>
+    <View
+        android:id="@+id/xh_shadow"
+        android:background="@drawable/xhtoolbar_shadow"
+        android:layout_below="@id/xh_activity_main_toolbar"
+        android:layout_height="4dp"
+        android:layout_width="match_parent">
+    </View>
+	<FrameLayout
+
+		android:id="@+id/title_fragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/xh_shadow"
+		android:visibility="gone">
+
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_below="@id/title_fragment"
+		android:id="@+id/xh_fragment_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</FrameLayout>
+	<FrameLayout
+		android:layout_below="@id/title_fragment"
+		android:id="@+id/bottom_fragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+	</FrameLayout>
+
+</RelativeLayout>
+

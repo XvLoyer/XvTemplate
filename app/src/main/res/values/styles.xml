@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base.Dark">
+		
+	</style>
+	s
+	<style name="AppTheme.Base.Light" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/Light_colorPrimary</item>
+		<item name="colorPrimaryDark">@color/Light_colorPrimaryDark</item>
+		<item name="colorAccent">@color/Light_colorAccent</item>
+		<item name="colorControlNormal">@android:color/white</item>
+
+	</style>
+	<style name="AppTheme.Base.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/Dark_colorPrimary</item>
+		<item name="colorControlNormal">@android:color/white</item>
+		<item name="colorPrimaryDark">@color/Dark_colorPrimaryDark</item>
+		<item name="android:windowBackground">@color/Dark_WindowBackground</item>
+		<item name="android:textColor">@color/Dark_TextColor</item>
+	</style>
+
+
+
+
+
+
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+		<item name="actionMenuTextColor">@android:color/white</item>
+	</style>
+
+
+
+
+
+	<style name="popup_theme.Light" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+		<item name="android:background">@android:color/white</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="overlapAnchor">false</item>
+	</style>
+
+	<style name="popup_theme.Dark" parent="ThemeOverlay.AppCompat.Light" >
+		<item name="android:background">@android:color/black</item>
+		<item name="android:textColor">@android:color/white</item>
+
+		<item name="overlapAnchor">false</item>
+	</style>
+
+</resources>
